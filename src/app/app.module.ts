@@ -13,11 +13,15 @@ import { HomeModule } from './home/home.module';
 import { SidenavModule } from './sidenav/sidenav.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardModule } from './dashboard/dashboard.module';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CorpoComponent } from './corpo/corpo.component';
+import { ProdutosComponent } from './produtos/produtos.component'
 
 @NgModule({
   declarations: [
     AppComponent,
+    CorpoComponent,
+    ProdutosComponent,
   ],
   imports: [
     BrowserModule,

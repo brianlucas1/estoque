@@ -1,8 +1,5 @@
-<app-sidenav (onToggleSideNav)="onToggleSideNav($event)" [isOpen]='open' (click)=isOpen()></app-sidenav>
-<div [@slideContent]="open? 'open' : 'closed'  ">
-
-  <router-outlet></router-outlet>
-
-</div>
-
-
+<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<app-corpo
+    [collapsed]="isSideNavCollapsed"
+    [screenWidth]="screenWidth"
+></app-corpo>
