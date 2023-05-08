@@ -15,13 +15,15 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CorpoComponent } from './corpo/corpo.component';
-import { ProdutosComponent } from './produtos/produtos.component'
+import { ProdutosComponent } from './produtos/produtos.component';
+import { EstoqueComponent } from './estoque/estoque.component'
 
 @NgModule({
   declarations: [
     AppComponent,
     CorpoComponent,
     ProdutosComponent,
+    EstoqueComponent,
   ],
   imports: [
     BrowserModule,

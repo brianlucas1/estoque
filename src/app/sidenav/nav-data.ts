@@ -1,16 +1,34 @@
-export const navBarData = [
+import { INavbarData } from "./nav-util";
+
+
+export const navBarData: INavbarData[] = [
     {
-        routerLink:'dashboard',
+        routeLink:'dashboard',
         icon: 'fa fa-home',
         label: 'dashBoard'
     },
 
     {
-      routerLink:'produtos',
+      routeLink:'produtos',
       icon: 'fa fa-tags',
-      label: 'Produtos'
-  },
+      label: 'Produtos',
+      items:[
+        {
+          routeLink: 'produtos/lista',
+          label:  'Lista Produtos'
+        },
+        {
+          routeLink: 'produtos/cadastro',
+          label:  'Cadastro Produto'
+        }
+      ]
+    },
 
+    {
+      routeLink:'estoque',
+      icon: 'fa fa-tags',
+      label: 'estoque',
 
+    },
 
 ];

@@ -5,11 +5,12 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from '../app-routing.module';
 import { HomeRoutingModule } from '../home/home-routing.module';
 import { DashboardModule } from '../dashboard/dashboard.module';
+import { SublevelMenuComponent } from './sublevel-menu.component';
 
 
 
 @NgModule({
-  declarations: [SidenavComponent],
+  declarations: [SidenavComponent, SublevelMenuComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

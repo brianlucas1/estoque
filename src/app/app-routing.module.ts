@@ -5,15 +5,16 @@ import { LoginComponent } from './login/fazLogin/fazlogin.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProdutosComponent } from './produtos/produtos.component';
+import { EstoqueComponent } from './estoque/estoque.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'login', pathMatch:'full'},
   {path:'login', component:LoginComponent },
   {path:'home', component: HomeComponent},
   {path: 'dashboard', component: DashboardComponent},
-  {path: 'produtos', component: ProdutosComponent},
-  ]
-  ;
+  {path: 'produtos',  loadChildren: () => import('./produtos/produtos.module').then(m => m.ProdutosModule)},
+  {path: 'estoque', component: EstoqueComponent},
+  ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
