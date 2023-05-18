@@ -1,3 +1,4 @@
+import { TableModule } from 'primeng/table';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -5,8 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
-import { FazCadastroComponent } from './login/faz-cadastro/faz-cadastro.component';
-import { SidenavComponent } from './sidenav/sidenav.component';
 
 import { LoginModule } from './login/Login.module';
 import { HomeModule } from './home/home.module';
@@ -15,14 +14,14 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CorpoComponent } from './corpo/corpo.component';
-import { ProdutosComponent } from './produtos/produtos.component';
 import { EstoqueComponent } from './estoque/estoque.component'
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     CorpoComponent,
-    ProdutosComponent,
     EstoqueComponent,
   ],
   imports: [
@@ -34,7 +33,9 @@ import { EstoqueComponent } from './estoque/estoque.component'
     HomeModule,
     SidenavModule,
     DashboardModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+  ],
+  exports:[
   ],
   providers: [],
   bootstrap: [AppComponent]

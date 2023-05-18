@@ -4,7 +4,6 @@ import { FazCadastroComponent } from './login/faz-cadastro/faz-cadastro.componen
 import { LoginComponent } from './login/fazLogin/fazlogin.component';
 import { HomeComponent } from './home/home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ProdutosComponent } from './produtos/produtos.component';
 import { EstoqueComponent } from './estoque/estoque.component';
 
 const routes: Routes = [
