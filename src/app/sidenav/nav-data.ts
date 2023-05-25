@@ -14,7 +14,7 @@ export const navBarData: INavbarData[] = [
       label: 'Produtos',
       items:[
         {
-          routeLink: 'produtos/lista',
+          routeLink: 'produtos/view',
           label:  'Lista Produtos'
         },
         {

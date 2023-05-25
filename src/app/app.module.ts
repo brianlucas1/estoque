@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 import { LoginModule } from './login/Login.module';
@@ -14,8 +14,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { DashboardModule } from './dashboard/dashboard.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CorpoComponent } from './corpo/corpo.component';
-import { EstoqueComponent } from './estoque/estoque.component'
-
+import { EstoqueComponent } from './estoque/estoque.component';
+import { TabViewModule } from 'primeng/tabview';
 
 
 @NgModule({
@@ -34,6 +34,9 @@ import { EstoqueComponent } from './estoque/estoque.component'
     SidenavModule,
     DashboardModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+
   ],
   exports:[
   ],

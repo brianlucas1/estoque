@@ -4,7 +4,6 @@ export class Produto{
 
   id:number;
   descricaoProduto:string;
-  descricaoReduziada:string;
   quantidade:number;
   categoria:CategoriaProduto;
   codBarras:number;

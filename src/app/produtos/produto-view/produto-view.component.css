@@ -1,0 +1,17 @@
+.p-card {
+  background-color: white;
+  padding-left: 50px;
+
+}
+.container {
+  background: white;
+  padding: 32px 16px;
+  border: 1px solid grey-200;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.24);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+.p-mt-2 {
+  margin-top: 0.5rem !important;
+  margin-right: 1.5rem;
+}

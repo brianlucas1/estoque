@@ -1,0 +1,25 @@
+<p-card>
+
+  <p-tabView>
+    <p-tabPanel header="Lista de Produtos" >
+      <ng-template pTemplate="content"  cache="true" >
+       <app-produtos-lista></app-produtos-lista>
+      </ng-template>
+    </p-tabPanel>
+    <p-tabPanel header="Cadastro de Produtos" >
+        <ng-template pTemplate="content"  cache="true" >
+          <app-produtos-cadastro></app-produtos-cadastro>
+        </ng-template>
+    </p-tabPanel>
+    <p-tabPanel header="Qual quer coisa">
+        <ng-template pTemplate="content" cache="true" >
+            Complex Content to Lazy Load
+        </ng-template>
+    </p-tabPanel>
+  </p-tabView>
+
+</p-card>
+
+
+
+

@@ -1,1 +1,40 @@
-<h1>  Cadastro de Produtos</h1>
+<form [formGroup]="cadastroProdutoForm" (submit)="salvar()">
+  <h2>Cadastro</h2>
+  <p-card header="Cadastro de Produtos">
+
+    <div class="p-fluid p-formgrid p-grid">
+      <div class="p-field p-col-1">
+          <div class="p-inputgroup">
+              <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+              <input  formControlName="idProduto" pInputText placeholder="Id">
+          </div>
+      </div>
+    </div>
+
+    <div class="p-fluid p-formgrid p-grid" styleClass="divisao">
+
+      <div class="p-field p-col-2">
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">Descrição</span>
+          <input  formControlName="descricaoProduto" pInputText placeholder="Descrição do Produto">
+       </div>
+      </div>
+
+      <div class="p-field p-col-2">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">$</span>
+            <input formControlName="valorProduto" pInputText placeholder="Valor">
+        </div>
+    </div>
+
+    <div class="p-field p-col-2">
+      <div class="p-inputgroup">
+          <span class="p-inputgroup-addon">Quantidade</span>
+          <input formControlName="qntdProduto" pInputText placeholder="Quantidade">
+      </div>
+  </div>
+
+    </div>
+
+  </p-card>
+</form>
