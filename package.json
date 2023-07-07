@@ -23,6 +23,8 @@
     "@angular/router": "~10.2.4",
     "bootstrap": "^5.2.3",
     "font-awesome": "^4.7.0",
+    "ng-block-ui":"^3.0.2",
+    "primeflex": "^2.0.0",
     "primeicons": "^6.0.1",
     "primeng": "^10.0.3",
     "primeng-lts": "^10.0.3",

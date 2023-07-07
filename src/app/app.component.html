@@ -1,4 +1,4 @@
-<app-sidenav (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
+<app-sidenav  *ngIf="showSideBar()" (onToggleSideNav)="onToggleSideNav($event)"></app-sidenav>
 <app-corpo
     [collapsed]="isSideNavCollapsed"
     [screenWidth]="screenWidth"

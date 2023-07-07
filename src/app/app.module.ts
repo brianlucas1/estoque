@@ -16,6 +16,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CorpoComponent } from './corpo/corpo.component';
 import { EstoqueComponent } from './estoque/estoque.component';
 import { TabViewModule } from 'primeng/tabview';
+import { ButtonModule } from 'primeng-lts/button';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { TabViewModule } from 'primeng/tabview';
     AppComponent,
     CorpoComponent,
     EstoqueComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -32,6 +34,7 @@ import { TabViewModule } from 'primeng/tabview';
     LoginModule,
     HomeModule,
     SidenavModule,
+    ButtonModule,
     DashboardModule,
     BrowserAnimationsModule,
     FormsModule,

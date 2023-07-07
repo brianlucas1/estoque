@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { SelectItem } from 'primeng/api';
+
 
 @Component({
   selector: 'app-produtos-cadastro',
@@ -8,17 +10,37 @@ import { FormGroup } from '@angular/forms';
 })
 export class ProdutosCadastroComponent implements OnInit {
 
+  @Output() display = new EventEmitter();
 
   cadastroProdutoForm:FormGroup
 
-  constructor() { }
+
+  constructor(
+    private formBuilder: FormBuilder,
+  ) {
+   }
 
   ngOnInit(): void {
+
+    this.cadastroProdutoForm = this.formBuilder.group({
+      id:[''],
+      descricaoProduto:[''],
+      qtdProduto:[''],
+      categoriaProduto:[''],
+      codBarras:[''],
+      marcaProduto:[''],
+      valorProduto:['']
+    })
   }
 
 
   salvar(){
 
+  }
+
+  voltar(){
+    this.display.emit(false);
+    this.cadastroProdutoForm.reset();
   }
 
 }

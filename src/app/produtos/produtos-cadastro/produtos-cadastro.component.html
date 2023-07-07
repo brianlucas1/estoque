@@ -1,40 +1,57 @@
 <form [formGroup]="cadastroProdutoForm" (submit)="salvar()">
-  <h2>Cadastro</h2>
-  <p-card header="Cadastro de Produtos">
-
-    <div class="p-fluid p-formgrid p-grid">
-      <div class="p-field p-col-1">
-          <div class="p-inputgroup">
-              <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
-              <input  formControlName="idProduto" pInputText placeholder="Id">
-          </div>
-      </div>
+<p-card>
+  <div class="p-fluid p-formgrid p-grid">
+    <div class="p-field p-col-1">
+      <label for="idProduto">Id</label>
+        <input type="number"
+          formControlName="id"
+          disabled=true
+        />
     </div>
+  </div>
 
-    <div class="p-fluid p-formgrid p-grid" styleClass="divisao">
+  <div class="p-fluid p-formgrid p-grid">
 
-      <div class="p-field p-col-2">
-        <div class="p-inputgroup">
-          <span class="p-inputgroup-addon">Descrição</span>
-          <input  formControlName="descricaoProduto" pInputText placeholder="Descrição do Produto">
-       </div>
-      </div>
-
-      <div class="p-field p-col-2">
-        <div class="p-inputgroup">
-            <span class="p-inputgroup-addon">$</span>
-            <input formControlName="valorProduto" pInputText placeholder="Valor">
-        </div>
+    <div class="p-field p-col-2">
+      <label for="descricaoProduto">Descirção do Produto</label>
+      <input id="descricaoProduto" type="text" placeholder="Livre Preenhimento" formControlName="descricaoProduto" >
     </div>
 
     <div class="p-field p-col-2">
-      <div class="p-inputgroup">
-          <span class="p-inputgroup-addon">Quantidade</span>
-          <input formControlName="qntdProduto" pInputText placeholder="Quantidade">
-      </div>
-  </div>
-
+      <label for="qtdProduto">Quantidade do Produto</label>
+      <input id="qtdProduto" type="text"  pInputText class="p-inputtext-sm" placeholder="Livre Preenhimento"  formControlName="qtdProduto" >
     </div>
 
+    <div class="p-field p-col-2">
+      <label for="categoriaProduto" >Categoria do Produto</label>
+      <input id="categoriaProduto" type="text" placeholder="Selecione"  formControlName="categoriaProduto">
+    </div>
+
+  </div>
+
+  <div class="p-fluid p-formgrid p-grid">
+
+    <div class="p-field p-col-2">
+      <label for="codBarras">Cód. Barras</label>
+      <input id="codBarras" type="text" placeholder="Livre Preenhimento" formControlName="codBarras" >
+    </div>
+
+    <div class="p-field p-col-2">
+      <label for="marcaProduto">Marca Produto</label>
+      <input id="marcaProduto" type="text"  placeholder="Selecione"  formControlName="marcaProduto" >
+    </div>
+
+    <div class="p-field p-col-1">
+      <label for="valorProduto">Valor</label>
+      <input id="valorProduto" type="text"   pInputText class="p-inputtext-sm" placeholder="Livre Preenhimento" formControlName="valorProduto" >
+    </div>
+
+  </div>
+
   </p-card>
+
+  <div class="footer">
+    <button pButton pRipple label="Salvar" icon="pi pi-check"></button>
+  </div>
+
 </form>

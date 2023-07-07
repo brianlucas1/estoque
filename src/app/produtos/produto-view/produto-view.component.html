@@ -1,21 +1,45 @@
+<p-dialog
+  header="Cadastro de Produtos"
+  [(visible)]="display"
+  [contentStyle]="{ maxHeight: '90vh' }"
+  [style]="{ width: '50vw' }"
+  [modal]="true">
+  <app-produtos-cadastro></app-produtos-cadastro>
+</p-dialog>
+
+
 <p-card>
 
   <p-tabView>
-    <p-tabPanel header="Lista de Produtos" >
+
+    <p-tabPanel header="Produtos" >
+        <p-card>
+          <div class="p-grid">
+            <div class="p-col-1">
+              <span class="p-buttonset">
+                  <button pButton pRipple label="Cadastrar Produto"
+                    (click)="abrirModal()"
+                    icon="pi pi-check">
+                  </button>
+              </span>
+            </div>
+          </div>
+        </p-card>
       <ng-template pTemplate="content"  cache="true" >
        <app-produtos-lista></app-produtos-lista>
       </ng-template>
     </p-tabPanel>
-    <p-tabPanel header="Cadastro de Produtos" >
-        <ng-template pTemplate="content"  cache="true" >
-          <app-produtos-cadastro></app-produtos-cadastro>
-        </ng-template>
-    </p-tabPanel>
-    <p-tabPanel header="Qual quer coisa">
+
+    <p-tabPanel header="Categorias">
         <ng-template pTemplate="content" cache="true" >
-            Complex Content to Lazy Load
+          <app-categorias-lista></app-categorias-lista>
         </ng-template>
     </p-tabPanel>
+    <p-tabPanel header="Marcas">
+      <ng-template pTemplate="content" cache="true" >
+          Complex Content to Lazy Load
+      </ng-template>
+  </p-tabPanel>
   </p-tabView>
 
 </p-card>

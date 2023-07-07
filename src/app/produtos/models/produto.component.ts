@@ -4,10 +4,10 @@ export class Produto{
 
   id:number;
   descricaoProduto:string;
-  quantidade:number;
-  categoria:CategoriaProduto;
+  qtdProduto:number;
+  categoriaProduto:CategoriaProduto;
   codBarras:number;
-  marca:string;
+  marcaProduto:string;
   valorProduto:number;
   dataCadastro: Date;
   dataAtualizacao: Date;

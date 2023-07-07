@@ -6,9 +6,6 @@
     "types": [
       "jasmine"
     ],
-    "paths": {
-      "primeng/*": ["node_modules/primeng-lts/*"]
-  }
   },
   "files": [
     "src/test.ts",

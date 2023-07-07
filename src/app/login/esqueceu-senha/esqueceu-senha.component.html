@@ -1,0 +1,38 @@
+<block-ui></block-ui>
+<form [formGroup]="esqueseuSenhaForm" (submit)="resetSenha()">
+  <section class="vh-100 gradient-custom">
+      <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+              <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card bg-dark text-white" style="border-radius: 1rem;">
+                  <div class="card-body p-5 text-center">
+
+                  <div class="mb-md-5 mt-md-4 pb-5">
+
+                      <h2 class="fw-bold mb-2 text-uppercase">Esqueseu a Senha</h2>
+
+                      <div class="form-outline form-white mb-4">
+                          <label class="form-label" for="user">E-mail*</label>
+                          <input formControlName="email"
+                             name="email"
+                             placeholder="Digite seu E-mail"
+                             class="form-control form-control-lg" />
+                      </div>
+
+                      <div>
+                          <button class="btn btn-outline-light btn-lg px-10" type="submit">Enviar Nova Senha</button>
+                      </div>
+                      <br>
+
+                      <button class="btn btn-outline-light btn-lg px-10" routerLink=""> Voltar</button>
+
+
+                  </div>
+
+                  </div>
+              </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</form>

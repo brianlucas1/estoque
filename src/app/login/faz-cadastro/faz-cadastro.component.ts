@@ -3,14 +3,14 @@ import { ActivatedRoute, Params, Router } from '@angular/router';
 import { CadastroServiceService } from './cadastro-service.service';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { CadastroForm } from './cadastroForm';
-import { ConfirmationService, MessageService } from 'primeng/api';
+import {MessageService } from 'primeng/api';
 
 
 @Component({
   selector: 'app-faz-cadastro',
   templateUrl: './faz-cadastro.component.html',
   styleUrls: ['./faz-cadastro.component.css'],
-  providers: [MessageService, ConfirmationService]
+  providers: [MessageService],
 })
 export class FazCadastroComponent implements OnInit {
 
@@ -30,7 +30,6 @@ export class FazCadastroComponent implements OnInit {
     private cadastroService:CadastroServiceService,
     private formBuilder: FormBuilder,
     private messageService: MessageService,
-    private confirmationService: ConfirmationService,
   ) {
   }
 
